@@ -10,7 +10,6 @@ const fs = require('fs');
 module.exports = (client) => {
 
     fs.readdirSync('./src/events/').forEach(dir => {
-
         const files = fs.readdirSync(`./src/events/${dir}/`).filter(file => file.endsWith('.js'));
         
         for (const file of files) {
