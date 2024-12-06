@@ -15,6 +15,7 @@ module.exports = (client) => {
         require('../../handlers/commandsHandler')(client);
         require('../../handlers/buttonsHandler')(client);
         require('../../handlers/selectmenusHandler')(client);
+        require('../../handlers/modalsHandler')(client);
     });
 
 };

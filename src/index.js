@@ -11,6 +11,7 @@ const client = new Client({ intents: Object.values(GatewayIntentBits) });
 client.commands = new Collection();
 client.buttons = new Collection();
 client.selectmenus = new Collection();
+client.modals = new Collection();
 
 // Importation des handlers
 require('./handlers/eventsHandler')(client);
