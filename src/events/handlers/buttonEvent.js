@@ -1,6 +1,6 @@
 /**
  * 
- * Fonction qui permet de gérer les interactions des boutons.
+ * Événement qui permet de gérer les interactions des boutons.
  *
  */
 module.exports = (client) => {

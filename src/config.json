@@ -1,3 +1,15 @@
 {
-    
+    "monitoring" : {
+        "RSS" : {
+            "technology" : "http://www.developpez.com/index/rss",
+            "exchange" : "http://www.developpez.com/index/rss",
+            "crypto" : "http://www.developpez.com/index/rss"
+        },
+
+        "channel" : {
+            "technology" : "1311046519234760704",
+            "exchange" : "1311046519234760704",
+            "crypto" : "1311046519234760704"
+        }
+    }
 }

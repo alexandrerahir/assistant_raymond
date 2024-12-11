@@ -1,6 +1,6 @@
 /**
  * 
- * Fonction qui permet de gérer les interactions des commandes.
+ * Événement qui permet de gérer les interactions des commandes.
  *
  */
 module.exports = (client) => {

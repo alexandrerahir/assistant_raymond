@@ -1,6 +1,6 @@
 /**
  * 
- * Fonction qui permet de gérer les interactions des modals.
+ * Événement qui permet de gérer les interactions des modals.
  *
  */
 module.exports = (client) => {
