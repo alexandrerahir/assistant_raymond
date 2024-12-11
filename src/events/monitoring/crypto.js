@@ -7,8 +7,8 @@ const config = require('../../../src/config.json');
 
 /**
  * 
- * Événement qui permet d'envoyer un embed chaque jour à 8h00 avec une
- * actualité sur l'informatique grâce au flux RSS.
+ * Événement qui permet d'envoyer un embed chaque jour à 10h00 avec une
+ * actualité sur la cryptomonnaie grâce au flux RSS.
  * 
  */
 module.exports = (client) => {
@@ -18,9 +18,9 @@ module.exports = (client) => {
         setInterval( async () => { 
 
             // Appel à la fonction pour envoyer l'actualité
-            monitoringDispatcher(client, config.monitoring.RSS.technology, "./src/assets/images/monitoring/sign_technology.png", config.monitoring.channel.technology);
+            monitoringDispatcher(client, config.monitoring.RSS.crypto, "./src/assets/images/monitoring/sign_crypto.png", config.monitoring.channel.crypto);
 
-        }, 5000);
+        }, 60000);
     });
 
 };

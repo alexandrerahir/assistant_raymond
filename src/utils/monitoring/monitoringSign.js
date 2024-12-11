@@ -7,7 +7,7 @@ const { createCanvas, loadImage } = require('canvas');
  * pour les panneaux d'actualités.
  * 
  */
-module.exports = async function monitoringSign(title) {
+module.exports = async function monitoringSign(image, title) {
 
     // Couper la phrase pour le canvas
     if (title.length > 65) {
@@ -19,7 +19,7 @@ module.exports = async function monitoringSign(title) {
     const ctx = canvas.getContext('2d');
 
     // Ajout du background
-    const backgroundSign = await loadImage('./src/assets/images/monitoring/sign_technology.png'); 
+    const backgroundSign = await loadImage(image); 
     ctx.drawImage(backgroundSign, 0, 0, canvas.width, canvas.height);
 
     // Ajout du titre
@@ -29,4 +29,5 @@ module.exports = async function monitoringSign(title) {
 
     // Retourner le buffer du canvas crée
     return canvas.toBuffer();
+
 };
